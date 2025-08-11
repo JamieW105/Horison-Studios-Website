@@ -175,7 +175,7 @@
                     </div>
                     <h3>leukwings0810</h3>
                     <p class="member-role">Owner</p>
-                    <p class="member-bio">N/A</p>
+                    <p class="member-bio"></p>
                 </div>
 
                 <div class="team-member">
@@ -219,7 +219,7 @@
                     </div>
                     <h3>col54477986</h3>
                     <p class="member-role">Developer</p>
-                    <p class="member-bio">N/A</p>
+                    <p class="member-bio"></p>
                 </div>
 
                 <div class="team-member">
@@ -230,7 +230,7 @@
                     </div>
                     <h3>Myklischa</h3>
                     <p class="member-role">Developer</p>
-                    <p class="member-bio">N/A</p>
+                    <p class="member-bio"></p>
                 </div>
             </div>
         </div>
@@ -346,6 +346,16 @@
             color: rgba(255, 255, 255, 0.8);
             line-height: 1.5;
         }
+        
+        /* About Logo Responsive Styling */
+        .about-logo {
+            max-width: 100%;
+            height: auto;
+            width: 120px;
+            display: block;
+            margin: 0 auto 1rem auto;
+            border-radius: 12px;
+        }
 
         /* Values Section */
         .values-section {
@@ -432,7 +442,7 @@
         .avatar-placeholder {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, #da7212, #af811e);
+            background: linear-gradient(135deg, #da731200, #af811e00);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -662,6 +672,11 @@
             .visual-overlay p {
                 font-size: 0.9rem;
             }
+            
+            .about-logo {
+                width: 100px;
+                max-width: 100%;
+            }
 
             .contact-grid {
                 grid-template-columns: 1fr;
@@ -706,6 +721,11 @@
             
             .visual-card {
                 padding: 1.25rem;
+            }
+            
+            .about-logo {
+                width: 80px;
+                max-width: 100%;
             }
         }
         
