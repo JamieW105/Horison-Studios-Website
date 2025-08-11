@@ -67,7 +67,7 @@
             <h1 class="hero-title">
                 Horizon <span class="highlight">Studios</span><span class="dot">.</span>
             </h1>
-            <p class="hero-subtitle">Ground Operator</p>
+            <p class="hero-subtitle">Ground Operator, Flight Horizon</p>
             
             <div class="hero-showcase">
                 <div class="showcase-card">
@@ -163,6 +163,193 @@
             </div>
         </div>
     </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="team-container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder about-logo">
+                            <img class="about-logo" src="assets/Profiles/Flame.png" alt="Flame Profile" class="about-logo">
+                         </div>
+                    </div>
+                    <h3>Flame</h3>
+                    <p class="member-role">Owner</p>
+                    <p class="member-bio">N/A</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder about-logo">
+                            <img class="about-logo" src="assets/Profiles/leukwings0810.png" alt="leukwings0810 Profile" class="about-logo">
+                         </div>
+                    </div>
+                    <h3>leukwings0810</h3>
+                    <p class="member-role">Owner</p>
+                    <p class="member-bio">N/A</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder about-logo">
+                            <img class="about-logo" src="assets/Profiles/Poko.png" alt="Poko Profile" class="about-logo">
+                         </div>
+                    </div>
+                    <h3>Poko</h3>
+                    <p class="member-role">Owner</p>
+                    <p class="member-bio">N/A</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder about-logo">
+                            <img class="about-logo" src="assets/Profiles/Aero.png" alt="Aero Profile" class="about-logo">
+                        </div>
+                    </div>
+                    <h3>aero</h3>
+                    <p class="member-role">Manager</p>
+                    <p class="member-bio">N/A</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>CherubDude</h3>
+                    <p class="member-role">Manager</p>
+                    <p class="member-bio">N/A</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>col54477986</h3>
+                    <p class="member-role">Developer</p>
+                    <p class="member-bio">N/A</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Myklischa</h3>
+                    <p class="member-role">Developer</p>
+                    <p class="member-bio">N/A</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Team Section Styles */
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #f6a53bcc, #af5f1e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .team-section {
+            padding: 6rem 2rem;
+            background: rgba(30, 64, 175, 0.05);
+        }
+
+        .team-container {
+            max-width: 1500px;
+            margin: 0 auto;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .team-member {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(51, 65, 85, 0.6));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-4px);
+        }
+
+        .member-avatar {
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .avatar-placeholder {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #da7212, #af811e);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            color: white;
+        }
+
+        .avatar-placeholder .about-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .team-member h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .member-role {
+            color: #f6ab3b;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .member-bio {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
 
     <script>
         function toggleMobileMenu() {
