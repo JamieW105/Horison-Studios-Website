@@ -116,6 +116,42 @@
             border-radius: 0 !important;
             padding: 0 !important;
         }
+        
+        /* Mobile responsiveness for redirect pages */
+        @media (max-width: 768px) {
+            .hero {
+                min-height: 90vh;
+                padding: 4rem 1rem 2rem;
+            }
+            
+            .hero-showcase {
+                max-width: 100%;
+                aspect-ratio: 4/3;
+            }
+            
+            .showcase-logo {
+                height: 100px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero {
+                padding: 3rem 0.75rem 1.5rem;
+            }
+            
+            .hero-showcase {
+                aspect-ratio: 1/1;
+                max-width: 280px;
+            }
+            
+            .showcase-logo {
+                height: 80px !important;
+            }
+            
+            .redirect-message p {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </body>
 </html>

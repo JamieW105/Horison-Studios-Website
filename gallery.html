@@ -34,11 +34,12 @@
                 </a>
             </div>
             <div class="nav-menu">
-                <a href="/" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link">Home</a>
                 <a href="games.html" class="nav-link">Games</a>
                 <a href="gallery.html" class="nav-link active">Gallery</a>
                 <a href="information.html" class="nav-link">Information</a>
             </div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
             <div class="social-links">
                 <a href="Redirects/Roblox.html" class="social-link">
                     <img src="assets/Soical-Icons/Roblox.png" alt="Roblox">
@@ -47,6 +48,13 @@
                     <img src="assets/Soical-Icons/Discord.png" alt="Discord">
                 </a>
             </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="games.html" class="nav-link">Games</a>
+            <a href="gallery.html" class="nav-link active">Gallery</a>
+            <a href="information.html" class="nav-link">Information</a>
         </div>
     </nav>
 
@@ -363,6 +371,28 @@
     </style>
 
     <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const toggleButton = document.querySelector('.mobile-menu-toggle');
+            
+            if (!mobileMenu.contains(event.target) && !toggleButton.contains(event.target)) {
+                mobileMenu.classList.remove('active');
+            }
+        });
+        
+        // Close mobile menu when window is resized to desktop size
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                document.getElementById('mobileMenu').classList.remove('active');
+            }
+        });
+        
         // Gallery filtering functionality
         document.addEventListener('DOMContentLoaded', function() {
             const filterBtns = document.querySelectorAll('.filter-btn');

@@ -259,62 +259,262 @@ body {
     font-size: 0.95rem;
 }
 
-/* Responsive Design */
+/* Mobile Navigation Toggle */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(10, 10, 10, 0.98);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem 0;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.mobile-menu .nav-link {
+    display: block;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Enhanced Responsive Design */
+@media (max-width: 1200px) {
+    .nav-container {
+        padding: 0 1.5rem;
+    }
+    
+    .hero-showcase {
+        max-width: 700px;
+    }
+    
+    .features-container {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 992px) {
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .hero-showcase {
+        max-width: 600px;
+    }
+    
+    .showcase-logo {
+        height: 140px;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-container {
         padding: 0 1rem;
+        position: relative;
     }
     
     .nav-menu {
         display: none;
     }
     
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    .social-links {
+        gap: 0.75rem;
+    }
+    
+    .social-link img {
+        width: 20px;
+        height: 32px;
+    }
+    
+    .nav-logo .logo {
+        height: 48px;
+    }
+    
     .hero {
         padding: 4rem 1rem 2rem;
+        min-height: 90vh;
+    }
+    
+    .hero-title {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+        margin-bottom: 0.75rem;
     }
     
     .hero-subtitle {
-        margin-bottom: 2rem;
+        font-size: 1.1rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .hero-showcase {
+        max-width: 100%;
+        aspect-ratio: 4/3;
     }
     
     .showcase-card {
-        padding: 2rem;
+        padding: 1rem;
     }
     
     .showcase-logo {
-        height: 90px;
+        height: 100px;
     }
     
     .features {
         padding: 4rem 1rem;
     }
     
+    .features-title {
+        font-size: clamp(2rem, 8vw, 2.5rem);
+        margin-bottom: 0.75rem;
+    }
+    
+    .features-subtitle {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+    
     .features-grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 1.25rem;
+        margin-top: 2rem;
     }
     
     .feature-card {
         padding: 1.5rem;
     }
+    
+    .feature-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 1rem;
+    }
+    
+    .feature-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .feature-description {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
 }
 
 @media (max-width: 480px) {
-    .join-btn {
-        padding: 0.6rem 1rem;
-        font-size: 0.9rem;
+    .nav-container {
+        padding: 0 0.75rem;
+    }
+    
+    .nav-logo .logo {
+        height: 40px;
+    }
+    
+    .social-link img {
+        width: 18px;
+        height: 28px;
+    }
+    
+    .hero {
+        padding: 3rem 0.75rem 1.5rem;
     }
     
     .hero-title {
-        font-size: 2.5rem;
+        font-size: clamp(2rem, 12vw, 3rem);
+        margin-bottom: 0.5rem;
     }
     
     .hero-subtitle {
         font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-showcase {
+        aspect-ratio: 1/1;
+        max-width: 280px;
+    }
+    
+    .showcase-logo {
+        height: 80px;
+    }
+    
+    .features {
+        padding: 3rem 0.75rem;
     }
     
     .features-title {
-        font-size: 2rem;
+        font-size: clamp(1.75rem, 10vw, 2rem);
+    }
+    
+    .features-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .features-grid {
+        gap: 1rem;
+    }
+    
+    .feature-card {
+        padding: 1.25rem;
+        border-radius: 12px;
+    }
+    
+    .feature-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+    }
+    
+    .feature-title {
+        font-size: 1rem;
+    }
+    
+    .feature-description {
+        font-size: 0.85rem;
+    }
+}
+
+/* Ultra Small Screens */
+@media (max-width: 320px) {
+    .nav-container {
+        padding: 0 0.5rem;
+    }
+    
+    .hero {
+        padding: 2.5rem 0.5rem 1rem;
+    }
+    
+    .hero-showcase {
+        max-width: 250px;
+    }
+    
+    .showcase-logo {
+        height: 70px;
+    }
+    
+    .features {
+        padding: 2.5rem 0.5rem;
+    }
+    
+    .feature-card {
+        padding: 1rem;
     }
 }
 
