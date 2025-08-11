@@ -92,13 +92,13 @@
                         <div class="feature-tag">Team Operations</div>
                     </div>
                     <div class="game-actions">
-                        <button class="btn-primary" disabled>
+                        <a href="Redirects/Roblox.html" class="btn-primary" target="_blank" rel="noopener noreferrer">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                             </svg>
-                            Coming Soon
-                        </button>
-                        <button class="btn-secondary" onclick="window.open('https://discord.gg/9Yw6UzusPZ', '_blank')">
+                            Roblox Group
+                        </a>
+                        <button class="btn-secondary" onclick="window.open('https://discord.gg/CcA2r5aCCa', '_blank')">
                             Join Discord for Updates
                         </button>
                     </div>
@@ -128,7 +128,7 @@
                             </svg>
                             Coming Soon
                         </button>
-                        <button class="btn-secondary" onclick="window.open('https://discord.gg/9Yw6UzusPZ', '_blank')">
+                        <button class="btn-secondary" onclick="window.open('https://discord.gg/DMcYGNwgrU', '_blank')">
                             Join Discord for Updates
                         </button>
                     </div>
@@ -141,6 +141,18 @@
     <script src="script.js"></script>
     
     <script>
+        // Debug function to test button clicks
+        document.addEventListener('DOMContentLoaded', function() {
+            const robloxButton = document.querySelector('a[href="Redirects/Roblox.html"]');
+            if (robloxButton) {
+                robloxButton.addEventListener('click', function(e) {
+                    console.log('Roblox button clicked!');
+                    console.log('Target href:', this.href);
+                    // Let the default behavior happen (navigate to the link)
+                });
+            }
+        });
+        
         function toggleMobileMenu() {
             const mobileMenu = document.getElementById('mobileMenu');
             mobileMenu.classList.toggle('active');
@@ -301,11 +313,20 @@
             align-items: center;
             gap: 0.5rem;
             transition: all 0.3s ease;
+            text-decoration: none;
+            position: relative;
+            z-index: 1;
         }
 
         .btn-primary {
             background: linear-gradient(135deg, #af471e, #f6a83b);
-            color: white;
+            color: white !important;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #8b3a19, #d18b32);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(246, 168, 59, 0.3);
         }
 
         .btn-primary:disabled {

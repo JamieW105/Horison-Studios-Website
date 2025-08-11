@@ -55,6 +55,7 @@
             <a href="games.html" class="nav-link">Games</a>
             <a href="gallery.html" class="nav-link">Gallery</a>
             <a href="information.html" class="nav-link active">Information</a>
+            <a href="Q&A.html" class="nav-link">Q&A</a>
         </div>
     </nav>
 
@@ -158,20 +159,18 @@
                 <div class="team-member">
                     <div class="member-avatar">
                         <div class="avatar-placeholder about-logo">
-                            <img class="about-logo" src="assets/Profiles/Flame.png" alt="Aeros PP" class="about-logo">
-                         </png>
+                            <img class="about-logo" src="assets/Profiles/Flame.png" alt="Flame PP" class="about-logo">
                         </div>
                     </div>
                     <h3>Flame</h3>
                     <p class="member-role">Owner</p>
-                    <p class="member-bio">N/A</p>
+                    <p class="member-bio">Founder of Horizon Studios</p>
                 </div>
 
                 <div class="team-member">
                     <div class="member-avatar">
                         <div class="avatar-placeholder about-logo">
-                            <img class="about-logo" src="assets/Profiles/leukwings0810.png" alt="Aeros PP" class="about-logo">
-                         </png>
+                            <img class="about-logo" src="assets/Profiles/leukwings0810.png" alt="leukwings0810 PP" class="about-logo">
                         </div>
                     </div>
                     <h3>leukwings0810</h3>
@@ -182,32 +181,29 @@
                 <div class="team-member">
                     <div class="member-avatar">
                         <div class="avatar-placeholder about-logo">
-                            <img class="about-logo" src="assets/Profiles/Poko.png" alt="Aeros PP" class="about-logo">
-                         </png>
+                            <img class="about-logo" src="assets/Profiles/Poko.png" alt="Poko PP" class="about-logo">
                         </div>
                     </div>
                     <h3>Poko</h3>
                     <p class="member-role">Owner</p>
-                    <p class="member-bio">N/A</p>
+                    <p class="member-bio">Creator of LegacyFlight on Roblox 🔥🔥</p>
                 </div>
 
                 <div class="team-member">
                     <div class="member-avatar">
                         <div class="avatar-placeholder about-logo">
-                            <img class="about-logo" src="assets/Profiles/Aero.png" alt="Aeros PP" class="about-logo">
-                        </png>
+                            <img class="about-logo" src="assets/Profiles/Aero.png" alt="Aero PP" class="about-logo">
                         </div>
                     </div>
                     <h3>aero</h3>
                     <p class="member-role">Manager</p>
-                    <p class="member-bio">N/A</p>
+                    <p class="member-bio">A dumbass who makes games</p>
                 </div>
 
                 <div class="team-member">
                     <div class="member-avatar">
                         <div class="avatar-placeholder about-logo">
                             <img class="about-logo" src="assets/Profiles/CHERUBDUDE.png" alt="CHERUBDUDE PP" class="about-logo">
-                        </png>
                         </div>
                     </div>
                     <h3>CherubDude</h3>
@@ -219,7 +215,6 @@
                     <div class="member-avatar">
                         <div class="avatar-placeholder about-logo">
                             <img class="about-logo" src="assets/Profiles/col54477986.png" alt="col54477986 PP" class="about-logo">
-                        </png>
                         </div>
                     </div>
                     <h3>col54477986</h3>
@@ -231,8 +226,7 @@
                     <div class="member-avatar">
                             <div class="avatar-placeholder about-logo">
                                 <img class="about-logo" src="assets/Profiles/Myklischa.png" alt="Myklischa PP" class="about-logo">
-                            </png>
-                        </div>
+                            </div>
                     </div>
                     <h3>Myklischa</h3>
                     <p class="member-role">Developer</p>
@@ -653,39 +647,6 @@
             }
         });
         
-        // Contact form handling
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.querySelector('.form');
-            
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Get form data
-                const formData = new FormData(form);
-                const data = {};
-                for (let [key, value] of formData.entries()) {
-                    data[key] = value;
-                }
-                
-                // Simulate form submission
-                const submitBtn = document.querySelector('.submit-btn');
-                const originalText = submitBtn.textContent;
-                
-                submitBtn.textContent = 'Sending...';
-                submitBtn.disabled = true;
-                
-                // Simulate API call
-                setTimeout(() => {
-                    submitBtn.textContent = 'Message Sent!';
-                    form.reset();
-                    
-                    setTimeout(() => {
-                        submitBtn.textContent = originalText;
-                        submitBtn.disabled = false;
-                    }, 2000);
-                }, 1000);
-            });
-        });
     </script>
 </body>
 </html>
