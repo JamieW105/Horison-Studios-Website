@@ -602,24 +602,133 @@
             color: #3b82f6;
         }
 
+        /* Enhanced mobile responsiveness */
+        @media (max-width: 1024px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.5rem;
+            }
+        }
+
         @media (max-width: 768px) {
+            .about-section {
+                padding: 4rem 1rem;
+            }
+            
+            .about-container {
+                max-width: 100%;
+            }
+            
             .about-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
+            
+            .section-title {
+                font-size: clamp(2rem, 6vw, 2.5rem);
+                margin-bottom: 1.5rem;
+            }
+            
+            .about-text {
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-bottom: 1.25rem;
+            }
 
             .stats-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(3, 1fr);
                 gap: 1rem;
+                margin-top: 2rem;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+            
+            .visual-card {
+                padding: 1.5rem;
+                border-radius: 16px;
+            }
+            
+            .visual-overlay h3 {
+                font-size: 1.1rem;
+            }
+            
+            .visual-overlay p {
+                font-size: 0.9rem;
             }
 
             .contact-grid {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
-
+        }
+        
+        @media (max-width: 480px) {
+            .about-section {
+                padding: 3rem 0.75rem;
+            }
+            
             .section-title {
-                font-size: 2rem;
+                font-size: clamp(1.75rem, 8vw, 2rem);
+                margin-bottom: 1.25rem;
+            }
+            
+            .about-text {
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin-top: 1.5rem;
+            }
+            
+            .stat-item {
+                padding: 1rem;
+                background: rgba(30, 41, 59, 0.3);
+                border-radius: 12px;
+            }
+            
+            .stat-number {
+                font-size: 1.75rem;
+            }
+            
+            .stat-label {
+                font-size: 0.9rem;
+            }
+            
+            .visual-card {
+                padding: 1.25rem;
+            }
+        }
+        
+        @media (max-width: 320px) {
+            .about-section {
+                padding: 2.5rem 0.5rem;
+            }
+            
+            .section-title {
+                font-size: clamp(1.5rem, 10vw, 1.75rem);
+            }
+            
+            .about-text {
+                font-size: 0.9rem;
+            }
+            
+            .stat-number {
+                font-size: 1.5rem;
+            }
+            
+            .visual-card {
+                padding: 1rem;
+                border-radius: 12px;
             }
         }
     </style>
