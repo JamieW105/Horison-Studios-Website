@@ -3,19 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    <!-- Meta refresh redirect - redirects after 0 seconds -->
-    <meta http-equiv="refresh" content="-10; url=https://discord.gg/9Yw6UzusPZ">
+    <meta name="description" content="Horizon Studios - Professional Roblox game development studio specializing in Ground Works Simulations. Unique assets, A.I systems, and premium gaming experiences.">
+    <meta name="keywords" content="Horizon Studios, Roblox, Game Development, Ground Works, Simulation, Aviation, Gaming">
+    <meta name="author" content="Horizon Studios">
+    
+    <title>Discord - Horizon Studios</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/Logo.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../assets/Logo.png" sizes="32x32">
+    <link rel="shortcut icon" href="../favicon.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Horizon Studios - Ground Operator">
+    <meta property="og:description" content="Professional Roblox game development studio specializing in Roblox aviation games.">
+    <meta property="og:image" content="../assets/atlas-logo-card.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Horizon Studios - Ground Operator">
+    <meta name="twitter:description" content="Professional Roblox game development studio specializing in Roblox aviation games.">
+    
+    <!-- Meta refresh redirect - redirects after 2 seconds -->
+    <meta http-equiv="refresh" content="2; url=https://discord.gg/9Yw6UzusPZ">
 </head>
 <body>
-    <div style="text-align: center; margin-top: 50px; font-family: Arial, sans-serif;">
-        <h2>Redirecting...</h2>
-        <p>If you are not redirected automatically, <a href="https://discord.gg/9Yw6UzusPZ">click here</a>.</p>
-    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../assets/Logo.png" alt="Horison Studios" class="logo">
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../games.html" class="nav-link">Games</a>
+                <a href="../gallery.html" class="nav-link">Gallery</a>
+                <a href="../information.html" class="nav-link">Information</a>
+            </div>
+            <div class="social-links">
+                <a href="Roblox.html" class="social-link">
+                    <img src="../assets/Soical-Icons/Roblox.png" alt="Roblox">
+                </a>
+                <a href="Discord.html" class="social-link">
+                    <img src="../assets/Soical-Icons/Discord.png" alt="Discord">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Redirect Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Redirecting to <span class="highlight">Discord</span><span class="dot">.</span>
+            </h1>
+            <p class="hero-subtitle">Taking you to our Discord server...</p>
+            
+            <div class="hero-showcase">
+                <div class="showcase-card">
+                    <img src="../assets/Soical-Icons/Discord.png" alt="Discord" class="showcase-logo">
+                </div>
+                <div class="redirect-message">
+                    <p>If you are not redirected automatically, <a href="https://discord.gg/9Yw6UzusPZ" class="redirect-link">click here</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- JavaScript redirect as backup -->
     <script>
-        window.location.href = "https://discord.gg/9Yw6UzusPZ";
+        // Redirect after 2 seconds
+        setTimeout(function() {
+            window.location.href = "https://discord.gg/9Yw6UzusPZ";
+        }, 2000);
     </script>
+
+    <style>
+        .redirect-message {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        
+        .redirect-message p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1rem;
+        }
+        
+        .redirect-link {
+            color: #3b82f6;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+        
+        .redirect-link:hover {
+            color: #60a5fa;
+        }
+        
+        /* Remove background from showcase card and logo */
+        .showcase-card {
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
+        
+        .showcase-logo {
+            background: transparent !important;
+            border-radius: 0 !important;
+            padding: 0 !important;
+        }
+    </style>
 </body>
 </html>

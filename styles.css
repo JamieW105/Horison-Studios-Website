@@ -153,11 +153,11 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(196, 128, 41, 0.95);
+    background: rgba(196, 129, 41, 0);
     backdrop-filter: blur(0px);
     border-radius: 10px;
     padding: 0rem;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0);
     z-index: 10;
 }
 
