@@ -108,14 +108,14 @@ body {
 }
 
 .highlight {
-    background: linear-gradient(135deg, #d1a617, #f6953b);
+    background: linear-gradient(135deg, #d95c58, #c82a1f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .dot {
-    color: #f6953b;
+    color: #c82a1f;
 }
 
 .hero-subtitle {
@@ -243,7 +243,7 @@ body {
 .feature-icon {
     width: 48px;
     height: 48px;
-    background: linear-gradient(135deg, #f68f3b, #923306);
+    background: linear-gradient(135deg, #f6443b, #923306);
     border-radius: 12px;
     display: flex;
     align-items: center;
