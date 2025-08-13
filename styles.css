@@ -74,8 +74,26 @@ body {
 }
 
 .social-link img {
-    width: 25px;  /* Adjust size as needed */
-    height: 40px; /* Adjust size as needed */
+    width: 25px;  
+    height: 40px; 
+    object-fit: contain;
+    transition: opacity 0.2s ease;
+}
+
+.game-social-link {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    padding: 0.4rem;
+}
+
+.game-social-link:hover {
+    transform: translateY(-2px);
+}
+
+.game-social-link img {
+    width: 28px;  
+    height: auto; 
     object-fit: contain;
     transition: opacity 0.2s ease;
 }
